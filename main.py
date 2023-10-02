@@ -42,12 +42,20 @@ while True:
         break
 
 count_char = 0
-for char in second_text:
-    if char == second_char:
+# for char in second_text:
+#     if char == second_char:
+#         count_char += 1
+#     else:
+#         continue
+# print(f"Count of '{second_char}' is : {count_char}")
+
+#якщо враховувати регістр
+lower_second_text = second_text.lower()
+lower_second_char = second_char.lower()
+for char in lower_second_text:
+    if char == lower_second_char:
         count_char += 1
     else:
         continue
 print(f"Count of '{second_char}' is : {count_char}")
-
-
 
