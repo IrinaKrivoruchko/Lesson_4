@@ -60,34 +60,66 @@
 # print(f"Count of '{second_char}' is : {count_char}")
 
 #Third task
+# while True:
+#     third_text = str(input("Please enter your text: "))
+#     text_len = len(third_text)
+#     if text_len == 0:
+#         print("You should to enter something")
+#         continue
+#     else:
+#         break
+#
+# while True:
+#     third_word = str(input("Please enter word for changing: "))
+#     word_len = len(third_word)
+#     if word_len == 0:
+#         print("You should to enter something")
+#         continue
+#     else:
+#         break
+#
+# while True:
+#     change_word = str(input("Please enter new word: "))
+#     change_word_len = len(change_word)
+#     if change_word_len == 0:
+#         print("You should to enter something")
+#         continue
+#     else:
+#         break
+#
+# if third_word in third_text:
+#     print(third_text.replace(third_word, change_word))
+# else:
+#     print("Your word isn't in text")
+
+#Fourth task
 while True:
-    third_text = str(input("Please enter your text: "))
-    text_len = len(third_text)
+    text = str(input("Enter your text: "))
+    text_len = len(text)
     if text_len == 0:
-        print("You should to enter something")
+        print("You should to enter string")
+        continue
+    elif text_len < 10:
+        print("You should to enter more then 10 characters")
         continue
     else:
         break
 
-while True:
-    third_word = str(input("Please enter word for changing: "))
-    word_len = len(third_word)
-    if word_len == 0:
-        print("You should to enter something")
-        continue
-    else:
-        break
-
-while True:
-    change_word = str(input("Please enter new word: "))
-    change_word_len = len(change_word)
-    if change_word_len == 0:
-        print("You should to enter something")
-        continue
-    else:
-        break
-
-if third_word in third_text:
-    print(third_text.replace(third_word, change_word))
-else:
-    print("Your word isn't in text")
+#1
+print(f"Third character: '{text[2]}'")
+#2
+print(f"Penultimate character: '{text[len(text)-1]}'")
+#3
+print(f"the first five characters: '{text[:5]}'")
+#4
+print(f"the entire line except for the last two characters: '{text[:len(text)-2]}'")
+#5
+print(f"all characters with even indices: '{text[0:len(text):2]}'")
+#6
+print(f"all characters with odd indices : '{text[1:len(text):2]}'")
+#7
+print(f"all characters in reverse: '{text[len(text):0:-1]}'")
+#8
+print(f"all the characters of the string one by one in reverse: '{text[len(text):0:-2]}'")
+#9
+print(f"length of line: '{len(text)}'")
